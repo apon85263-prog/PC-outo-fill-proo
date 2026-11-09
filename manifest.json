@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PCC Passport Autofill Helper",
+  "version": "1.0.0",
+  "description": "Local helper for extracting available passport text and filling matching Bangladesh Police Clearance form fields.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {"default_popup": "popup.html"},
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}

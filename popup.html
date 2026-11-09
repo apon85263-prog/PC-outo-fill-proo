@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PCC Passport Autofill</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="wrap">
+<h1>PCC Passport Autofill</h1>
+<p class="sub">Local passport text helper</p>
+<input id="file" type="file" accept=".pdf,.jpg,.jpeg,.png">
+<button id="extract">Extract passport info</button>
+<div id="status"></div>
+<div id="results"></div>
+<button id="fill">Fill current PCC form</button>
+<p class="note">Review every field before submitting any official application.</p>
+</div>
+<script src="pdf-lite.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
